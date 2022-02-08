@@ -5,11 +5,11 @@
 :root {
   /* Your default theme */
   --background: white;
-  --foreground: black;
+  --foreground: #111827;
 }
 
 [data-theme="dark"] {
-  --background: black;
+  --background: #111827;
   --foreground: white;
 }
 
@@ -31,13 +31,13 @@ a {
 }
 
 :root {
-  --fg: #000;
+  --fg: #111827;
   --bg: #fff;
 }
 
 [data-theme="dark"] {
   --fg: #fff;
-  --bg: #000;
+  --bg: ##111827;
 }
 
 .border-grad {
