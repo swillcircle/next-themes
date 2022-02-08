@@ -14,9 +14,11 @@ const MainSection = () => {
   const pathVariants = {
     sun: {
       d: outputRange[0],
+      rotate: 0,
     },
     moon: {
       d: outputRange[1],
+      rotate: "-10deg",
     },
   };
 
