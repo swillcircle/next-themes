@@ -18,7 +18,7 @@ const MainSection = () => {
     },
     moon: {
       d: outputRange[1],
-      rotate: "-10deg",
+      rotate: "-45deg",
     },
   };
 
@@ -31,7 +31,7 @@ const MainSection = () => {
       {theme && (
         <section className="relative w-screen h-screen flex flex-col mx-auto px-2 pt-20 md:pt-36 items-center bg-white dark:bg-gray-900 transition-bg">
           <div className="relative flex justify-center items-center mb-36">
-            <div className="absolute rotate">
+            <div className="absolute">
               <svg
                 width="24"
                 height="24"

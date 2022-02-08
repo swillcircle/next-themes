@@ -54,10 +54,6 @@ a {
   transition: opacity 0.3s ease-in-out;
 }
 
-.rotate {
-  transform: rotate(-45deg);
-}
-
 .transition-bg {
   transition: background-color 0.3s ease-in-out;
 }
