@@ -1,3 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +28,76 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --fg: #000;
+  --bg: #fff;
+}
+
+[data-theme="dark"] {
+  --fg: #fff;
+  --bg: #000;
+}
+
+.border-grad {
+  background: linear-gradient(107deg, #3350e4, #7b61ff);
+}
+
+.grad-shadow {
+  box-shadow: 4px 4px 12px 4px rgba(50, 80, 288, 0.05),
+    -4px -4px 12px 4px rgba(128, 47, 231, 0.05);
+}
+
+.opacity-100,
+.opacity-0 {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(-45deg);
+}
+
+.transition-bg {
+  transition: background-color 0.3s ease-in-out;
+}
+/* Dark Mode  */
+.dark-mode-toggle-container {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #e4e4e4;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.12),
+    inset -1px -4px 4px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #292929;
+  left: calc(100% - 20px);
+  transition: left 0.1s ease-out;
+}
+
+.dark-mode-toggle:focus {
+  outline: none;
+}
+
+.dark-mode-toggle.dark-mode {
+  background-color: #f5f5f5;
+  left: 0%;
+}
+
+.date-widget.dark-mode {
+  background: #292929;
+  box-shadow: inset -4px -4px 14px rgba(0, 0, 0, 1),
+    inset 4px 4px 14px rgba(255, 255, 255, 0.25), 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-toggle-container.dark-mode {
+  background: #292929;
 }
