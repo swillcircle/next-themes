@@ -27,7 +27,7 @@ const MainSection = () => {
   return (
     <>
       {theme && (
-        <section className="relative w-screen h-screen flex flex-col pt-36 items-center bg-white dark:bg-gray-900 transition-bg">
+        <section className="relative w-screen h-screen flex flex-col mx-auto px-2 pt-20 md:pt-36 items-center bg-white dark:bg-gray-900 transition-bg">
           <div className="relative flex justify-center items-center mb-36">
             <div className="absolute rotate">
               <svg
@@ -70,7 +70,7 @@ const MainSection = () => {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto rounded overflow-hidden border-grad grad-shadow">
+          <div className="container mx-auto rounded border-grad grad-shadow">
             <div className="flex justify-between bg-gray-50 dark:bg-gray-900 mx-0.5 my-0.5 px-8 py-8 rounded-sm transition-bg">
               <div className="">
                 <pre className="whitespace-pre-wrap">
