@@ -253,9 +253,6 @@ const MainSection = () => {
                       "dark-mode-toggle" +
                       (theme === "light" ? " light" : " dark-mode")
                     }
-                    // onClick={() => {
-                    //   setTheme(theme === "light" ? "dark" : "light");
-                    // }}
                   ></button>
                 </div>
                 <p className="dark-mode-toggle-text text-gray-900 dark:text-gray-50">
